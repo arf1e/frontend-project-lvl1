@@ -9,3 +9,7 @@
 ### GitHub Actions:
 
 ![Lint](https://github.com/arf1e/frontend-project-lvl1/actions/workflows/lint.yml/badge.svg)
+
+### asciinema
+
+[![asciicast](https://asciinema.org/a/5GOK4PY9cgeEl2pkDMPlGYKsn.png)](https://asciinema.org/a/5GOK4PY9cgeEl2pkDMPlGYKsn)
