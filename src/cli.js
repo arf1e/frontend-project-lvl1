@@ -8,9 +8,9 @@ const greet = () => {
 };
 
 export const even = () => {
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
   const username = greet();
   let wins = 0;
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
   while (wins < 3) {
     const number = Math.ceil(Math.random() * 20);
     console.log(`Question: ${number}`);
