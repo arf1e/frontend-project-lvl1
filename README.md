@@ -5,3 +5,7 @@
 ### CodeClimate maintainability:
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/161efea875fdd43f6e59/maintainability)](https://codeclimate.com/github/arf1e/frontend-project-lvl1/maintainability)
+
+### GitHub Actions:
+
+![Lint](https://github.com/arf1e/frontend-project-lvl1/actions/workflows/lint/badge.svg)
