@@ -8,4 +8,4 @@
 
 ### GitHub Actions:
 
-![Lint](https://github.com/arf1e/frontend-project-lvl1/actions/workflows/lint/badge.svg)
+![Lint](https://github.com/arf1e/frontend-project-lvl1/actions/workflows/lint.yml/badge.svg)
