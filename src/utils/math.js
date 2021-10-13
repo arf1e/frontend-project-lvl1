@@ -16,3 +16,11 @@ export const getRandomArrayElement = (arr) => {
   const randomArrayElement = arr[randomIndex];
   return randomArrayElement;
 };
+
+export const getGreatestCommonDivisor = (a, b) => {
+  // Euclidean algorithm | https://en.wikipedia.org/wiki/Greatest_common_divisor
+  if (b === 0) {
+    return a;
+  }
+  return getGreatestCommonDivisor(b, a % b);
+};

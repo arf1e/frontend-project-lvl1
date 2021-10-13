@@ -1,9 +1,9 @@
-import { readUserGuess } from '../cli.js';
+import { readUserGuess, askQuestion } from '../cli.js';
 import { generateRandomNumber } from '../utils/math.js';
 
 const even = () => {
   const number = generateRandomNumber(50);
-  console.log(`Question: ${number}`);
+  askQuestion(number);
 
   const isEven = number % 2 === 0;
 
