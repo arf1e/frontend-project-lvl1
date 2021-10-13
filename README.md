@@ -23,3 +23,7 @@
 #### Greatest Common Divisor
 
 [![asciicast](https://asciinema.org/a/Rj1HbVYJ2WqHADxrMAIcY4wot.png)](https://asciinema.org/a/Rj1HbVYJ2WqHADxrMAIcY4wot)
+
+#### Progression
+
+[![asciicast](https://asciinema.org/a/Y2WCi6GHRldoIwlHevJLb8Mz5.png)](https://asciinema.org/a/Y2WCi6GHRldoIwlHevJLb8Mz5)

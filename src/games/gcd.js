@@ -1,6 +1,6 @@
 import { readUserGuess, askQuestion } from '../cli.js';
 import { generateRandomNumber, getGreatestCommonDivisor } from '../utils/math.js';
-import tryMapToNumber from '../utils/strings.js';
+import { tryMapToNumber } from '../utils/strings.js';
 
 const gcd = () => {
   // Generate numbers

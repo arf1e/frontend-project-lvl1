@@ -6,15 +6,20 @@ export const operators = {
 
 export const generateRandomNumber = (range) => Math.floor(Math.random() * range);
 
-export const getRandomArrayElement = (arr) => {
+export const generateRandomArrayIndex = (arr) => {
+  const arrayLength = arr.length;
   /*
     Because generateRandomNumber uses Math.floor() to generate number
     and Math.random() is never 1, subtracting 1 from arr.length will never reach the last item
   */
-  const arrayLength = arr.length;
   const randomIndex = generateRandomNumber(arrayLength);
-  const randomArrayElement = arr[randomIndex];
-  return randomArrayElement;
+  return randomIndex;
+};
+
+export const getRandomArrayElement = (arr) => {
+  const randomIndex = generateRandomArrayIndex(arr);
+  const randomElement = arr[randomIndex];
+  return randomElement;
 };
 
 export const getGreatestCommonDivisor = (a, b) => {
@@ -23,4 +28,23 @@ export const getGreatestCommonDivisor = (a, b) => {
     return a;
   }
   return getGreatestCommonDivisor(b, a % b);
+};
+
+export const generateProgression = (firstElement, step) => {
+  const result = [firstElement];
+  for (let i = 1; i < 10; i += 1) {
+    const previousElement = result[i - 1];
+    result.push(previousElement + step);
+  }
+  return result;
+};
+
+export const hideRandomProgressionElement = (progression) => {
+  const outputProgression = [...progression]; // Take a copy of a progression
+  const randomIndex = generateRandomArrayIndex(outputProgression);
+  const hiddenElement = outputProgression[randomIndex];
+
+  // Hide the element
+  outputProgression[randomIndex] = '..';
+  return { outputProgression, hiddenElement };
 };
