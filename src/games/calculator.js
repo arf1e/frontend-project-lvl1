@@ -1,6 +1,6 @@
 import { readUserGuess, askQuestion } from '../cli.js';
 import { operators, generateRandomNumber, getRandomArrayElement } from '../utils/math.js';
-import tryMapToNumber from '../utils/strings.js';
+import { tryMapToNumber } from '../utils/strings.js';
 
 const calculator = () => {
   // Generate random operator

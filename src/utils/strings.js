@@ -1,4 +1,4 @@
-const tryMapToNumber = (string) => {
+export const tryMapToNumber = (string) => {
   const numeralizedString = Number(string);
   let result;
   if (Number.isNaN(numeralizedString)) {
@@ -13,4 +13,4 @@ const tryMapToNumber = (string) => {
   return result;
 };
 
-export default tryMapToNumber;
+export const printArrayInLine = (array) => array.join(' ');
