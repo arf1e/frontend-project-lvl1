@@ -1,30 +1,18 @@
-import readLineSync from 'readline-sync';
-import greet from '../cli.js';
+import { readUserGuess } from '../cli.js';
+import { generateRandomNumber } from '../utils/math.js';
 
 const even = () => {
-  const username = greet();
+  const number = generateRandomNumber(50);
+  console.log(`Question: ${number}`);
 
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  const isEven = number % 2 === 0;
 
-  let wins = 0;
-  while (wins < 3) {
-    const number = Math.ceil(Math.random() * 20);
-    console.log(`Question: ${number}`);
-
-    const guess = readLineSync.question('Your answer: ');
-    const isEven = number % 2 === 0;
-
-    const correctAnswer = isEven ? 'yes' : 'no';
-    if (guess === correctAnswer) {
-      wins += 1;
-      console.log('Correct!');
-    } else {
-      console.log(`${guess} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
-      console.log(`Let's try again, ${username}!`);
-      wins = 0;
-    }
-  }
-  console.log(`Congratulations, ${username}!`);
+  const guess = readUserGuess();
+  const correctAnswer = isEven ? 'yes' : 'no';
+  return {
+    guess,
+    correctAnswer,
+  };
 };
 
 export default even;
