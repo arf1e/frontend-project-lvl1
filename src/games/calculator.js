@@ -1,12 +1,10 @@
 import { readUserGuess, askQuestion } from '../cli.js';
-import { operators, generateRandomNumber } from '../utils/math.js';
+import { operators, generateRandomNumber, getRandomArrayElement } from '../utils/math.js';
 
 const calculator = () => {
   // Generate random operator
   const operatorKeys = Object.keys(operators);
-  const lastOperatorIndex = operatorKeys.length - 1;
-  const randomOperatorIndex = generateRandomNumber(lastOperatorIndex);
-  const operator = operatorKeys[randomOperatorIndex];
+  const operator = getRandomArrayElement(operatorKeys);
 
   // Generate operands
   const leftOperand = generateRandomNumber(100);
