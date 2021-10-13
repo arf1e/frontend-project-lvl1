@@ -1,10 +1,13 @@
-import { getAnswer } from '../cli.js';
+import { readUserGuess } from '../cli.js';
+import { generateRandomNumber } from '../utils/math.js';
 
 const even = () => {
-  const number = Math.ceil(Math.random() * 20);
+  const number = generateRandomNumber(50);
   console.log(`Question: ${number}`);
+
   const isEven = number % 2 === 0;
-  const guess = getAnswer();
+
+  const guess = readUserGuess();
   const correctAnswer = isEven ? 'yes' : 'no';
   return {
     guess,
