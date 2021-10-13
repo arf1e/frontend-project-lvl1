@@ -12,4 +12,14 @@
 
 ### asciinema
 
-[![asciicast](https://asciinema.org/a/5GOK4PY9cgeEl2pkDMPlGYKsn.png)](https://asciinema.org/a/5GOK4PY9cgeEl2pkDMPlGYKsn)
+#### Even
+
+[![asciicast](https://asciinema.org/a/tsJ9OBbgWNtgA9wdbb8U1n1Cc.png)](https://asciinema.org/a/tsJ9OBbgWNtgA9wdbb8U1n1Cc)
+
+#### Calc
+
+[![asciicast](https://asciinema.org/a/xxIKl4RD9bjzy15ZIFXct0kbd.png)](https://asciinema.org/a/xxIKl4RD9bjzy15ZIFXct0kbd)
+
+#### Greatest Common Divisor
+
+[![asciicast](https://asciinema.org/a/Rj1HbVYJ2WqHADxrMAIcY4wot.png)](https://asciinema.org/a/Rj1HbVYJ2WqHADxrMAIcY4wot)
